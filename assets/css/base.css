@@ -13,6 +13,7 @@
     --header-height: 120px;
     --header-navbar: 26px;
     --header-with-search: calc(var(--header-height) - var(--header-navbar));
+    --header__sort-height: 42px;
 }
 *{
     /* extend from tag contain it */
@@ -64,7 +65,9 @@ html{
     width: 20%;
     /* border: 1px solid black; */
 }
-
+.app{
+    overflow: hidden;
+}
 /* Animation */
 /* Cho phep tao ra nhung thang chuyen dong */
 @keyframes fadeIn{
@@ -119,6 +122,7 @@ html{
 /* Pagination */
 .pagination{
     margin: 48px 0 30px 0;
+    padding: 0;
 }
 .home_pagination{
     display: flex;
